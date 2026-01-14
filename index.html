@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Game Kelas 5B</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4facfe, #00c6ff);
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        .box {
+            background: white;
+            color: black;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        a, button {
+            display: block;
+            margin: 15px auto;
+            padding: 12px;
+            width: 90%;
+            max-width: 300px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        a:hover, button:hover {
+            background: #ff9800;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎮 Portal Game Kelas 5B</h1>
+    <p>Pilih game dan baca cara bermainnya</p>
+
+    <!-- GAME GEMTIK -->
+    <div class="box">
+        <h2>🧠 Game Gemtik</h2>
+
+        <a href="https://www.bookwidgets.com/play/7KpXqRU_-iQAFBfhvoQAAA/VHLBQV3?teacher_id=6130752844726272" target="_blank">
+            ▶ Mainkan Game Gemtik
+        </a>
+
+        <p>
+            Game Gemtik adalah game edukasi untuk melatih logika dan ketelitian.
+            Bacalah soal dengan baik lalu pilih jawaban yang paling benar.
+        </p>
+    </div>
+
+    <!-- GAME PUZZLE -->
+    <div class="box">
+        <h2>🧩 Game Puzzle</h2>
+
+        <a href="https://www.bookwidgets.com/play/3ehwm0fQ-iQAFB43MYQAAA/2HLFS2K?teacher_id=6130752844726272" target="_blank">
+            ▶ Mainkan Game Puzzle
+        </a>
+
+        <button onclick="toggleGambar()">
+            👀 Lihat Contoh Gambar
+        </button>
+
+        <!-- GAMBAR DARI LINK -->
+        <img 
+            id="contohPuzzle" 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jigsaw_puzzle_01.jpg/640px-Jigsaw_puzzle_01.jpg" 
+            alt="Contoh Puzzle">
+
+        <p>
+            Game Puzzle melatih konsentrasi dan kesabaran.
+            Susun potongan gambar hingga menjadi gambar yang utuh dan benar.
+        </p>
+    </div>
+
+    <p>© Kelas 5B</p>
+
+    <script>
+        function toggleGambar() {
+            const img = document.getElementById("contohPuzzle");
+            if (img.style.display === "none" || img.style.display === "") {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
